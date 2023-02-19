@@ -1,0 +1,7 @@
+[18-Feb-2020 08:50:23 UTC] PHP Fatal error:  Cannot redeclare Admin::add_user() in /home/hmocpx43gb7s/public_html/clarigo.in/Expresso/application/controllers/Admin.php on line 792
+[18-Feb-2020 11:38:09 UTC] PHP Fatal error:  Cannot redeclare Admin::view_product() in /home/hmocpx43gb7s/public_html/clarigo.in/Expresso/application/controllers/Admin.php on line 920
+[18-Feb-2020 11:38:33 UTC] PHP Fatal error:  Cannot redeclare Admin_model::get_product() in /home/hmocpx43gb7s/public_html/clarigo.in/Expresso/application/models/Admin_model.php on line 535
+[23-Mar-2020 11:28:33 America/New_York] PHP Fatal error:  Can't use function return value in write context in /home/codebupb/admin.oneclicklaundry.in/application/controllers/Api.php on line 995
+[06-Jun-2020 07:06:35 America/New_York] PHP Fatal error:  Cannot use [] for reading in /home/codebupb/admin.oneclicklaundry.in/application/controllers/Api.php on line 2679
+[06-Jun-2020 07:06:48 America/New_York] PHP Fatal error:  Cannot use [] for reading in /home/codebupb/admin.oneclicklaundry.in/application/controllers/Api.php on line 2679
+[06-Jun-2020 07:06:52 America/New_York] PHP Fatal error:  Cannot use [] for reading in /home/codebupb/admin.oneclicklaundry.in/application/controllers/Api.php on line 2679

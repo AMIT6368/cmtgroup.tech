@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+@media screen and (max-width:1500px) {
+    body {
+        background: black;
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .loginpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heding {
+        font-family: 'Boogaloo', cursive;
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .mainhedding {
+            text-align: center;
+        }
+    }
+
+    .inputdata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(20, 20, 20);
+        height: 40vh;
+        width: 60vw;
+        border-radius: 40px 40px 40px 40px;
+        padding: 0 0 80px 0;
+        box-shadow: 1px 47px 18px -7px rgba(0, 0, 0, 1);
+
+        input {
+            background: rgb(14, 14, 14);
+            color: white;
+            border: 2.5px solid rgb(26, 26, 26);
+            height: 40px;
+            width: 30vw;
+            border-radius: 10px;
+
+            :focus {
+                border: none;
+            }
+        }
+
+        input[type=password]:focus {
+            border: none;
+        }
+
+        #email {
+            margin-bottom: 10px;
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Lbtn {
+            background: rgb(255, 80, 22);
+            background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+            color: white;
+            font-weight: bold;
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        a {
+            color: aqua;
+            text-decoration: none;
+        }
+    }
+
+    // .......................................header...................................
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .side-btn {
+            i {
+                cursor: pointer;
+                font-size: 35px;
+                color: rgba(255, 23, 23, 1);
+                margin: 7px 0 0 5px;
+            }
+        }
+
+        .clint_details {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 60px 0 0;
+
+            .clint {
+                font-size: 10px;
+            }
+
+            .Clint_name {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+        .clint_img {
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin: 5px 10px 0 0;
+            }
+        }
+
+
+        .side_bar {
+            display: none;
+            position: absolute;
+            background: black;
+            width: 50vw;
+            height: 100vh;
+            .close{
+                position: absolute;
+                float: right;
+                right: 0;
+                font-size: 22px;
+                margin: 5px 10px;
+                cursor: pointer;
+            }
+
+            .sidebar_logo {
+                height: 14vh;
+                img {
+                    height: 100px;
+                    width: 150px;
+                }
+            }
+
+            .hometab {
+                background: rgb(22, 22, 22);
+                display: flex;
+                flex-direction: row;
+
+                .Side_icon {
+                    background: rgb(30, 30, 30);
+                    padding: 2px 5px 2px 5px;
+                    margin: 5px 5px 5px 10px;
+                    border-radius: 7px;
+                    box-shadow: 2px 2px 18px 2px rgba(0,0,0,0.75);
+                }
+                .text{
+                    margin-top: 10px;
+                }
+                .text_big{
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+
+            }
+
+            .bar {
+                height: 5px;
+                background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                ;
+            }
+        }
+    }
+
+    // ..............
+
+    // .......................................home.........................
+
+    .home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .welcome {
+            font-size: .8rem;
+            margin-top: 5px;
+        }
+
+        .Balance {
+            margin-top: 5px;
+            background: rgb(22, 22, 22);
+            width: 94vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+            .currert {
+                margin: 0 0 0 0;
+                font-size: 18px;
+                color: lightgray;
+            }
+
+            .currert_amount {
+                font-size: 20px;
+                background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            .Count_balance {
+                background: rgb(30, 30, 30);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70vw;
+                border-radius: 20px;
+                margin: 10px 0 0 0;
+                box-shadow: 2px 20px 19px -7px rgba(0, 0, 0, 0.75);
+
+                .left_home {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 30px;
+                }
+
+                .spent {
+                    font-size: 14px;
+                }
+
+                .mid {
+                    width: 7px;
+                    border-radius: 20px;
+                    margin: 2px 0 2px 0;
+                    background: linear-gradient(180deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                    ;
+                }
+
+                .right_home {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: 30px;
+                }
+            }
+
+        }
+
+        .trading_graph {
+            background-color: rgb(22, 22, 22);
+            border-radius: 20px;
+            width: 94vw;
+            height: 48vh;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        .copyright {
+            font-size: 15px;
+        }
+
+    }
+
+    //    end...........................................
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: rgb(10, 10, 10);
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .loginpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heding {
+        font-family: 'Boogaloo', cursive;
+
+        img {
+            width: 250px;
+            height: 200px;
+            margin: 30px 0 0 0;
+        }
+
+        .mainhedding {
+            text-align: center;
+        }
+    }
+
+    .inputdata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(20, 20, 20);
+        height: 40vh;
+        width: 100vw;
+        border-radius: 40px 40px 40px 110px;
+        padding: 0 0 80px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+
+        input {
+            background: rgb(14, 14, 14);
+            color: white;
+            border: 2.5px solid rgb(26, 26, 26);
+            height: 40px;
+            width: 70vw;
+            border-radius: 10px;
+
+            :focus {
+                border: none;
+            }
+        }
+
+        input[type=password]:focus {
+            border: none;
+        }
+
+        #email {
+            margin: 20px 0 10px 0;
+
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Lbtn {
+            background: rgb(255, 80, 22);
+            background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+            color: white;
+            font-weight: bold;
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        a {
+            color: aqua;
+            text-decoration: none;
+        }
+    }
+
+    // .......................................header...................................
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .side-btn {
+            i {
+                cursor: pointer;
+                font-size: 35px;
+                color: rgba(255, 23, 23, 1);
+                margin: 7px 0 0 5px;
+            }
+        }
+
+        .clint_details {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 60px 0 0;
+
+            .clint {
+                font-size: 10px;
+            }
+
+            .Clint_name {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+        .clint_img {
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin: 5px 10px 0 0;
+            }
+        }
+
+
+        .side_bar {
+            display: none;
+            position: absolute;
+            background: black;
+            width: 50vw;
+            height: 100vh;
+            .close{
+                position: absolute;
+                float: right;
+                right: 0;
+                font-size: 22px;
+                margin: 5px 10px;
+                cursor: pointer;
+            }
+
+            .sidebar_logo {
+                height: 14vh;
+                img {
+                    height: 100px;
+                    width: 150px;
+                }
+            }
+
+            .hometab {
+                background: rgb(22, 22, 22);
+                display: flex;
+                flex-direction: row;
+
+                .Side_icon {
+                    background: rgb(30, 30, 30);
+                    padding: 2px 5px 2px 5px;
+                    margin: 5px 5px 5px 10px;
+                    border-radius: 7px;
+                    box-shadow: 2px 2px 18px 2px rgba(0,0,0,0.75);
+                }
+                .text{
+                    margin-top: 10px;
+                }
+                .text_big{
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+
+            }
+
+            .bar {
+                height: 5px;
+                background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                ;
+            }
+        }
+    }
+
+    // ..............
+
+    // .......................................home.........................
+
+    .home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .welcome {
+            font-size: .8rem;
+            margin-top: 5px;
+        }
+
+        .Balance {
+            margin-top: 5px;
+            background: rgb(22, 22, 22);
+            width: 94vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+            .currert {
+                margin: 0 0 0 0;
+                font-size: 18px;
+                color: lightgray;
+            }
+
+            .currert_amount {
+                font-size: 20px;
+                background: linear-gradient(90deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            .Count_balance {
+                background: rgb(30, 30, 30);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70vw;
+                border-radius: 20px;
+                margin: 10px 0 0 0;
+                box-shadow: 2px 20px 19px -7px rgba(0, 0, 0, 0.75);
+
+                .left_home {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 30px;
+                }
+
+                .spent {
+                    font-size: 14px;
+                }
+
+                .mid {
+                    width: 7px;
+                    border-radius: 20px;
+                    margin: 2px 0 2px 0;
+                    background: linear-gradient(180deg, rgba(255, 80, 22, 1) 8%, rgba(255, 205, 52, 1) 41%, rgba(255, 23, 23, 1) 79%);
+                    ;
+                }
+
+                .right_home {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: 30px;
+                }
+            }
+
+        }
+
+        .trading_graph {
+            background-color: rgb(22, 22, 22);
+            border-radius: 20px;
+            width: 94vw;
+            height: 48vh;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        .copyright {
+            font-size: 15px;
+        }
+
+    }
+
+    //    end...........................................
+}

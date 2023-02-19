@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@media screen and (max-width: 1800px) {
+  body {
+    background: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; }
+
+  .loginpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .heding {
+    font-family: 'Boogaloo', cursive; }
+    .heding img {
+      width: 250px;
+      height: 200px; }
+    .heding .mainhedding {
+      text-align: center; }
+
+  .inputdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    height: 40vh;
+    width: 60vw;
+    border-radius: 40px 40px 40px 40px;
+    padding: 0 0 80px 0;
+    box-shadow: 1px 47px 18px -7px black; }
+    .inputdata input {
+      background: #0e0e0e;
+      color: white;
+      border: 2.5px solid #1a1a1a;
+      height: 40px;
+      text-align: center;
+      width: 30vw;
+      border-radius: 10px; }
+      .inputdata input :focus {
+        border: none; }
+    .inputdata input[type=password]:focus {
+      border: none; }
+      .inputdata input[type=dob]:focus {
+      border: none; }
+    .inputdata #email {
+      margin-bottom: 10px; }
+    .inputdata ::placeholder {
+      text-align: center;
+      font-weight: bold; }
+    .inputdata .Lbtn {
+      background: #ff5016;
+      background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+      color: white;
+      font-weight: bold;
+      width: 130px;
+      height: 40px;
+      border-radius: 10px;
+      border: none; }
+    .inputdata a {
+      color: aqua;
+      text-decoration: none; }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header .side-btn i {
+      cursor: pointer;
+      font-size: 35px;
+      color: #ff1717;
+      margin: 7px 0 0 5px; }
+    .header .clint_details {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 60px 0 0; }
+      .header .clint_details .clint {
+        font-size: 10px; }
+      .header .clint_details .Clint_name {
+        text-transform: uppercase;
+        font-size: 12px; }
+    .header .clint_img img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 5px 10px 0 0; }
+    .header .side_bar {
+      display: none;
+      position: absolute;
+      background: black;
+      width: 50vw;
+      z-index: 100;
+      height: 100vh; }
+      .header .side_bar .close {
+        position: absolute;
+        float: right;
+        right: 0;
+        font-size: 22px;
+        margin: 5px 10px;
+        cursor: pointer; }
+      .header .side_bar .sidebar_logo {
+        height: 14vh; }
+        .header .side_bar .sidebar_logo img {
+          height: 100px;
+          width: 150px; }
+      .header .side_bar .hometab {
+        background: #161616;
+        display: flex;
+        flex-direction: row; }
+        .header .side_bar .hometab .Side_icon {
+          background: #1e1e1e;
+          padding: 2px 5px 2px 5px;
+          margin: 5px 5px 5px 10px;
+          border-radius: 7px;
+          box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.75); }
+        .header .side_bar .hometab .text {
+          margin-top: 10px; }
+        .header .side_bar .hometab .text_big {
+          font-size: 13px;
+          margin-top: 10px; }
+      .header .side_bar .bar {
+        height: 5px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%); }
+
+  .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .home .welcome {
+      font-size: .8rem;
+      margin-top: 5px; }
+    .home .Balance {
+      margin-top: 5px;
+      background: #161616;
+      width: 94vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px; }
+      .home .Balance .currert {
+        margin: 0 0 0 0;
+        font-size: 18px;
+        color: lightgray; }
+      .home .Balance .currert_amount {
+        font-size: 20px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; }
+      .home .Balance .Count_balance {
+        background: #1e1e1e;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+        border-radius: 20px;
+        margin: 10px 0 0 0;
+        box-shadow: 2px 20px 19px -7px rgba(0, 0, 0, 0.75); }
+        .home .Balance .Count_balance .left_home {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: 30px; }
+        .home .Balance .Count_balance .spent {
+          font-size: 14px; }
+        .home .Balance .Count_balance .mid {
+          width: 7px;
+          border-radius: 20px;
+          margin: 2px 0 2px 0;
+          background: linear-gradient(180deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%); }
+        .home .Balance .Count_balance .right_home {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 30px; }
+    .home .trading_graph {
+      background-color: #161616;
+      border-radius: 20px;
+      width: 94vw;
+      height: 48vh;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home .trading_graph img {
+        height: 250px;
+        width: 250px; }
+    .home .copyright {
+      font-size: 15px; } }
+@media screen and (max-width: 767px) {
+  body {
+    background: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; }
+
+  .loginpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .heding {
+    font-family: 'Boogaloo', cursive; }
+    .heding img {
+      width: 250px;
+      height: 200px;
+      margin: 30px 0 0 0; }
+    .heding .mainhedding {
+      text-align: center; }
+
+  .inputdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    height: 40vh;
+    width: 94vw;
+    border-radius: 40px 40px 40px 110px;
+    padding: 0 0 80px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+    .inputdata input {
+      background: #0e0e0e;
+      margin-top: 10px;
+      color: white;
+      border: 2.5px solid #1a1a1a;
+      height: 40px;
+      width: 70vw;
+      border-radius: 20px; }
+      .inputdata input :focus {
+        border: none; }
+    .inputdata input[type=password]:focus {
+      border: none; }
+      .inputdata input[type=dob]:focus {
+      border: none; }
+    .inputdata #email {
+      margin: 20px 0 10px 0; }
+    .inputdata ::placeholder {
+      text-align: center;
+      font-weight: bold; }
+    .inputdata .Lbtn {
+      background: #ff5016;
+      background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+      color: white;
+      font-weight: bold;
+      width: 130px;
+      height: 40px;
+      border-radius: 10px;
+      border: none; }
+    .inputdata a {
+      color: aqua;
+      text-decoration: none; }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header .side-btn i {
+      cursor: pointer;
+      font-size: 35px;
+      color: #ff1717;
+      margin: 7px 0 0 5px; }
+    .header .clint_details {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 60px 0 0; }
+      .header .clint_details .clint {
+        font-size: 10px; }
+      .header .clint_details .Clint_name {
+        text-transform: uppercase;
+        font-size: 12px; }
+    .header .clint_img img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 5px 10px 0 0; }
+    .header .side_bar {
+      display: none;
+      position: absolute;
+      background: black;
+      width: 50vw;
+      height: 100vh; }
+      .header .side_bar .close {
+        position: absolute;
+        float: right;
+        right: 0;
+        font-size: 22px;
+        margin: 5px 10px;
+        cursor: pointer; }
+      .header .side_bar .sidebar_logo {
+        height: 14vh; }
+        .header .side_bar .sidebar_logo img {
+          height: 100px;
+          width: 150px; }
+      .header .side_bar .hometab {
+        background: #161616;
+        display: flex;
+        flex-direction: row; }
+        .header .side_bar .hometab .Side_icon {
+          background: #1e1e1e;
+          padding: 2px 5px 2px 5px;
+          margin: 5px 5px 5px 10px;
+          border-radius: 7px;
+          box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.75); }
+        .header .side_bar .hometab .text {
+          margin-top: 10px; }
+        .header .side_bar .hometab .text_big {
+          font-size: 13px;
+          margin-top: 10px; }
+      .header .side_bar .bar {
+        height: 5px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%); }
+
+  .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .home .welcome {
+      font-size: .8rem;
+      margin-top: 5px; }
+    .home .Balance {
+      margin-top: 5px;
+      background: #161616;
+      width: 94vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px; }
+      .home .Balance .currert {
+        margin: 0 0 0 0;
+        font-size: 18px;
+        color: lightgray; }
+      .home .Balance .currert_amount {
+        font-size: 20px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; }
+      .home .Balance .Count_balance {
+        background: #1e1e1e;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+        border-radius: 20px;
+        margin: 10px 0 0 0;
+        box-shadow: 2px 20px 19px -7px rgba(0, 0, 0, 0.75); }
+        .home .Balance .Count_balance .left_home {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: 30px; }
+        .home .Balance .Count_balance .spent {
+          font-size: 14px; }
+        .home .Balance .Count_balance .mid {
+          width: 7px;
+          border-radius: 20px;
+          margin: 2px 0 2px 0;
+          background: linear-gradient(180deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%); }
+        .home .Balance .Count_balance .right_home {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 30px; }
+    .home .trading_graph {
+      background-color: #161616;
+      border-radius: 20px;
+      width: 94vw;
+      height: 48vh;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home .trading_graph img {
+        height: 250px;
+        width: 250px; }
+    .home .copyright {
+      font-size: 15px; } }
+input#dob{
+  position:relative;
+  overflow:hidden;
+}
+input#dob::-webkit-calendar-picker-indicator{
+  display:block;
+  top:0;
+  left:0;
+  background: #0000;
+  position:absolute;
+  transform: scale(12)
+}
+
+
+.loaderactive{
+  position: absolute;
+  background: #0a0a0a89;
+  width: 100vw;height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  justify-content: center;
+}
+.loader {
+  transform: translateZ(1px);
+  z-index: 100;
+}
+.loader:after {
+  content: '$';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height:40px;
+  font-size: 32px;
+  font-weight: bold;
+  background: #FFD700;
+  color: #DAA520;
+  border: 4px double ;
+  box-sizing: border-box;
+  box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+  animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes coin-flip {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+[type="file"] {
+/* Style the color of the message that says 'No file chosen' */
+  color: #878787;
+  /*color: transparent;*/
+
+}
+[type="file"]::-webkit-file-upload-button {
+  background: #0e0e0e;
+  border: 2px solid #0e0e0e;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+[type="file"]::-webkit-file-upload-button:hover {
+  background: #0e0e0e;
+  border: 2px solid #0e0e0e;
+  color: #fff;
+}
+
+
+.cs_back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  .Coustomer_service {
+    background: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 94vw;
+    height: 65vh;
+    border-radius: 20px; }
+    .Coustomer_service .cs_icon {
+      font-size: 35px;
+      background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; }
+    .Coustomer_service .cs_title {
+      margin-bottom: 20px; }
+    .Coustomer_service .Call_us {
+      background: #1e1e1e;
+      width: 60vw;
+      height: 18vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 20px 43px 8px rgba(0, 0, 0, 0.75); }
+      .Coustomer_service .Call_us i {
+        font-size: 22px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; }
+      .Coustomer_service .Call_us .Call_us_title {
+        margin-bottom: 5px; }
+      .Coustomer_service .Call_us .cs_time {
+        font-size: 13px; }
+
+
+        .Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Profile .profile_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #161616;
+      width: 94vw;
+      height: 25vh;
+      margin-top: 50px;
+      border-radius: 20px; }
+      .Profile .profile_title .Profile_imgs img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        left: 37vw;
+        top: 70px;
+        /*border: 1px solid white;*/
+        }
+      .Profile .profile_title .profile_name {
+        background: #1e1e1e;
+        height: 50px;
+        width: 60vw;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 20px 43px 8px rgba(0, 0, 0, 0.75); }
+    .Profile .Profile_table {
+      background: #161616;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 94vw;
+      height: 50vh;
+      margin-top: 20px;
+      border-radius: 20px; }
+      .Profile .Profile_table .table {
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 25px; }
+      .Profile .Profile_table .chenge_pass {
+        padding: 10px 25px 10px 25px;
+        margin-top: 10px;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+        color: white;
+        border-radius: 10px;
+        border: none; }
+      .Profile .Profile_table a {
+        text-decoration: none;
+        color: #ff5016;
+        margin-top: 10px; } }
+
+
+
+      .wallet {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wallet .add {
+      background: #161616;
+      margin: 12px 0px 9px 9px;
+      width: 94vw;
+      height: 40vh;
+      border-radius: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .wallet .add .add_icon i {
+        font-size: 2.1rem;
+        margin: 0 0 10px 0;
+        background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; }
+      .wallet .add .fund_add {
+        font-size: .9em; }
+      .wallet .add .fund_container {
+        margin: 0 0 15px 0;
+        width: 35vw;
+        text-align: center; }
+        .wallet .add .fund_container .Fund_amount {
+          font-size: 1.3rem; }
+        .wallet .add .fund_container .borderline {
+          background: linear-gradient(90deg, #ff5016 8%, #ffcd34 41%, #ff1717 79%);
+          height: 5px;
+          border-radius: 10px; }
+      .wallet .add .fund_btn {
+        padding: 10px 50px 10px 50px;
+        background: #1e1e1e;
+        border: none;
+        color: lightgray;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 2px 20px 19px -7px rgba(0, 0, 0, 0.75);
+        cursor: pointer; }
+
+
+
+.Profit_Loss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Profit_Loss .profit_graph {
+      background: #161616;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 94vw;
+      height: 30vh;
+      border-radius: 20px; }
+      .Profit_Loss .profit_graph img {
+        width: 300px;
+        height: 220px; }
+    .Profit_Loss .profit {
+      background: #161616;
+      width: 94vw;
+      height: 10vh;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px; }
+      .Profit_Loss .profit .profit_amount {
+        color: green;
+        margin-right: 10px;
+        font-weight: bold; }
+      .Profit_Loss .profit .Loss_amount {
+        color: red;
+        margin-right: 10px;
+        font-weight: bold; }
+
+
+
+/*# sourceMappingURL=style.css.map */
